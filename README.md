@@ -1,2 +1,2 @@
 # fb-auth
- Firebase Authentication Example
+ Firebase Authentication Example with REST Api
