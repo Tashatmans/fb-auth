@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+
+        <span class="fs-4"><a routerLink="/profile" class="navbar-brand">Fb Auth Example</a></span>
+
+      </div>
+
+      <app-nav-menu></app-nav-menu>
+
+      <div *ngIf="!isAuthenticated" class="col-md-3 text-end">
+        <button routerLink="/login" type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button routerLink="/register" type="button" class="btn btn-primary">Sign-up</button>
+      </div>
+
+      <div *ngIf="isAuthenticated" class="col-md-3 text-end">
+        <button routerLink="/profile" type="button" class="btn btn-outline-primary me-2">Profile</button>
+        <button type="button" class="btn btn-outline-primary me-2" (click)="logOut()">LogOut</button>
+
+      </div>
+    </header>
+  </div>
+
+

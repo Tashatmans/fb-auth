@@ -1,0 +1,14 @@
+<div class="container ">
+    <div class="form-capsule w-100 m-auto">
+        <form #changeEmailForm="ngForm" (ngSubmit)="onSubmit(changeEmailForm)">
+    <h1 class="h3 mb-3 fw-normal">Change Email</h1>
+
+    <div class="form-floating">
+      <input type="email" required email ngModel name="email" class="form-control" id="singleEmail"
+        placeholder="name@example.com">
+      <label for="singleEmail">Email address</label>
+    </div>
+
+    <button class="btn btn-primary w-100 py-2" type="submit" [disabled]="changeEmailForm.invalid">Change</button>
+  </form>
+    </div></div>

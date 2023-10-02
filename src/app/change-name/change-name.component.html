@@ -1,0 +1,14 @@
+<div class="container ">
+    <div class="form-capsule w-100 m-auto">
+        <form #changeForm="ngForm" (ngSubmit)="onSubmit(changeForm)">
+    <h1 class="h3 mb-3 fw-normal">Change Display Name</h1>
+
+    <div class="form-floating">
+      <input type="text" required ngModel name="displayName"  class="form-control" id="displayNameText"
+        placeholder="name@example.com">
+      <label for="displayNameText">Display Name</label>
+    </div>
+
+    <button class="btn btn-primary w-100 py-2" type="submit" [disabled]="changeForm.invalid">Change</button>
+  </form>
+    </div></div>
